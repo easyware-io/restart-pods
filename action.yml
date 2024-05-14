@@ -1,0 +1,13 @@
+name: 'Restart all pods in a given namespace.'
+description: 'Restart all pods in a given namespace.'
+author: 'easyware.io'
+inputs:
+  namespace:
+    required: true
+    description: 'Namespace in which to restart all pods.'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: shield
+  color: orange
